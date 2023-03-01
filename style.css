@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to bottom right, #33ccff, #ff99cc);
+  }
+  img {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+  h1 {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: #ff7f50;
+    }
+    50% {
+      color: #87cefa;
+    }
+    100% {
+      color: #ff7f50;
+    }
+  }
+  button {
+    background-color: #87cefa;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  p:hover {
+    font-size: 1.4rem;
+  }
+        
