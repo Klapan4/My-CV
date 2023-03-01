@@ -6,93 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моё резюме</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="photo_2022-12-07_18-28-39.jpg" alt="Моя жопокарточка" weight="200" height="250">
-            </td>
-            <td>
-                <h1>Артошин Максим</h1>
-                <p><em>Я учусь в КГТУ, <strong>на данный момент изучаю frontend разработку.</strong></em></p>
-            </td>
-        </tr>
-    </table>
+    <div class="container">
 
-    <hr>
+    <header class="info">
+        <img src="photo_2022-12-07_19-01-26.jpg" alt="Моя жопокарточка" class="photo">
+        <h1>Артошин Максим</h1>
+        <p>Я учусь в КГТУ, <strong>на данный момент изучаю frontend разработку.</strong></p>
+        <p>Головач легенда, дауби-дауби</p>
 
-    <h2>Мои социальные сети:</h2>
-    <ul type="square">
-        <li>
-            <a href="https://vk.com/morfiniano" target="_blank">Мой вконтакте</a>
-        </li>
-        <li>
-            <a href="https://www.dotabuff.com/players/181354175" target="_blank">Секретные разработки Геней Рёдан</a>
-        </li>
-    </ul>
+        <h4>Мои социальные сети:</h4>
+                <a href="https://vk.com/morfiniano" target="_blank">Мой вконтакте</a>
+                |
+                <a href="https://www.dotabuff.com/players/181354175" target="_blank">Секретные разработки Геней Рёдан</a>
+    </header>
 
-    <hr>
 
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Жесткая долбешка в доту 2</li>
-        <li>Чтение разного рода корейский мультиков</li>
-        <li>Программирование (мама, я программирую на html)</li>
-    </ol>
 
-    <hr>
 
-    <h2>Опыт работы:</h2>
-    <table border="1">
-            <thead>
-            <tr>
-                <th>Компания</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-            </thead>
+    <main>
+    <div class="card bg-1">
 
-            <tbody> 
-            <tr>
-                <td>Дота 2</td>
-                <td>Хусос</td>
-                <td>2014-2023</td>
-            </tr>
-            <tr>
-                <td>IRL</td>
-                <td>МикроШвепсик</td>
-                <td>2003-2023</td>
-            </tr>
-            </tbody>
-    </table>
+        <h2>Мои хобби:</h2>
+        <ol class="list">
+            <li>Жесткая долбешка в доту 2</li>
+            <li>Чтение разного рода корейский мультиков</li>
+            <li>Программирование (мама, я программирую на html)</li>
+        </ol>
+    </div>
 
-    <hr>
 
-    <h2>Обратная связь:</h2>
-    <form action="/">
-        <label for="FIO">Ваше ФИО:</label>
-        <input type="text" name="" id="FIO" 
-        placeholder="Введите ваше имя...">
+    <div class="card bg-2">
+        <h2>Опыт работы:</h2>
+        <table class="table">
+                <tr>
+                    <td>Дота 2</td>
+                    <td>Ху*сос</td>
+                    <td>2014-2023</td>
+                </tr>
+                <tr>
+                    <td>IRL</td>
+                    <td>МикроШвепсик</td>
+                    <td>2003-2023</td>
+                </tr>
+                <tr>
+                    <td>КГТУ</td>
+                    <td>Студент</td>
+                    <td>20021-2023</td>
+                </tr>
+        </table>
+    </div>
 
-        <br> 
-        <label for="email">Ваш email:</label>
-        <input type="email" name="" id="email" 
-        placeholder="Введите email...">
 
-        <br>
-        <label for="mess">Ваше сообщение:</label>
-        <br>
-        <textarea id="mess"></textarea>
+    <div class="card bg-3">
+        <h2>Дополнительное:</h2>
+        <a href="123.html">ЩЁЛКНИ НА МЕНЯ</a>
+    </div>
 
-        <br>
-        <input type="submit">
-    </form>
+    <div class="contact">
+        <h2>Обратная связь:</h2>
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="FIO">Ваше ФИО:</label>
+                    <input type="text" name="" id="FIO" 
+                    placeholder="Введите ваше имя...">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" name="" id="email" 
+                    placeholder="Введите email...">
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="mess">Ваше сообщение:</label>
+                <textarea id="mess"></textarea>
+            </div>
 
-    <hr>
+            <input type="submit">
+        </form>
+    </div>
 
-    <h2>Дополнительное:</h2>
-    <a href="123.html">ЩЁЛКНИ НА МЕНЯ</a>
+</div>
+
+</main>
 
 </body>
 </html>
