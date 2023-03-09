@@ -28,6 +28,10 @@ a:visited{
 }
 .info{
     margin-bottom: 30px;
+    display: flex;
+}
+.info-text{
+    padding-left: 40px
 }
 .info p {
     color: dimgray;
@@ -45,6 +49,11 @@ a:visited{
 }
 .card h2{
     margin-bottom: 10px;
+    text-decoration: underline;
+    /* text-decoration: none;  */
+    /* border-bottom: 1px black solid;  */
+
+
 }
 
 .bg-1{
